@@ -7,7 +7,9 @@ const HotCupOfTea: React.FC = () => {
     ];
 
     return vaporDelay.map((de) => {
-      return <span style={{ animationDelay: `calc(${de} * -0.5s)` }}></span>;
+      return (
+        <span key={de} style={{ animationDelay: `calc(${de} * -0.5s)` }}></span>
+      );
     });
   };
 
