@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import HomePage from './components/HomePage/HomePage';
 
 const BackgroundRevertTetric = lazy(
   () => import('./components/BackgroundRevertTetric/BackgroundRevertTetric')
@@ -11,13 +12,20 @@ const ThreeDWavyCircle = lazy(
 const AnimatedIconBackground = lazy(
   () => import('./components/AnimatedIconBackground/AnimatedIconBackground')
 );
+const NeonLoading = lazy(() => import('./components/NeonLoading/NeonLoading'));
 
 const App = () => {
   return (
     <div>
       <Suspense fallback={<p>Loading</p>}>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/neon-loading">
+            <NeonLoading />
+          </Route>
+          <Route path="/animated-icon-background">
             <AnimatedIconBackground />
           </Route>
           <Route path="/background-revert-tetric">
