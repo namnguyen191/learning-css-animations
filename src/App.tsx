@@ -8,6 +8,9 @@ const HotCupOfTea = lazy(() => import('./components/HotCupOfTea/HotCupOfTea'));
 const ThreeDWavyCircle = lazy(
   () => import('./components/3DWavyCircle/ThreeDWavyCircle')
 );
+const AnimatedIconBackground = lazy(
+  () => import('./components/AnimatedIconBackground/AnimatedIconBackground')
+);
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
       <Suspense fallback={<p>Loading</p>}>
         <Switch>
           <Route path="/">
+            <AnimatedIconBackground />
+          </Route>
+          <Route path="/background-revert-tetric">
             <BackgroundRevertTetric />
           </Route>
           <Route path="/three-d-wavy-circle">

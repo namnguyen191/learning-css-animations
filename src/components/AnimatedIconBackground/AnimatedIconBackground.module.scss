@@ -1,0 +1,105 @@
+.animatedIconBackgroundContainer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: hsl(0, 0%, 7%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .row {
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+
+    &:nth-child(even) {
+      div {
+        animation: animate3 80s linear infinite;
+        animation-delay: -80s;
+
+        &:nth-child(2) {
+          animation: animate4 80s linear infinite;
+          animation-delay: -40s;
+        }
+
+        i {
+          color: hsla(0, 0%, 0%, 0.5);
+          transition: 1s;
+          padding: 0 5px;
+          user-select: none;
+          cursor: default;
+
+          &:hover {
+            transition: 0s;
+            color: hsl(120, 100%, 50%);
+            text-shadow: 0 0 120px hsl(120, 100%, 50%);
+          }
+        }
+      }
+    }
+
+    div {
+      animation: animate1 80s linear infinite;
+      animation-delay: -80s;
+
+      &:nth-child(2) {
+        animation: animate2 80s linear infinite;
+        animation-delay: -40s;
+      }
+
+      i {
+        color: hsla(0, 0%, 0%, 0.5);
+        transition: 1s;
+        padding: 0 5px;
+        user-select: none;
+        cursor: default;
+
+        &:hover {
+          transition: 0s;
+          color: hsl(120, 100%, 50%);
+          text-shadow: 0 0 120px hsl(120, 100%, 50%);
+        }
+      }
+    }
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes animate4 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
