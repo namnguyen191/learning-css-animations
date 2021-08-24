@@ -3,6 +3,8 @@ import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
+import neonLoadingBg from './images/neon-loading.gif';
+import neonTextBg from './images/neon-text.gif';
 import revertTetricBg from './images/revert-tetric.gif';
 import wavy3dBg from './images/wavy-three-d.gif';
 
@@ -35,6 +37,20 @@ const HomePage: React.FC = () => {
           title="Hot Cup of Tea"
           text="Cause coffee sucks!"
           imageUrl={hotCupOfTeaBg}
+        />
+      </Link>
+      <Link to="/neon-loading">
+        <ParallaxCard
+          title="Neon Loading"
+          text="Trippy AF"
+          imageUrl={neonLoadingBg}
+        />
+      </Link>
+      <Link to="/neon-text">
+        <ParallaxCard
+          title="Neon Text"
+          text="Hello darkness my old friend"
+          imageUrl={neonTextBg}
         />
       </Link>
     </div>

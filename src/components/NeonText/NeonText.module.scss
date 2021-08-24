@@ -1,0 +1,59 @@
+.neonTextContainer {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(193, 73%, 10%);
+
+  h2 {
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: hsl(193, 65%, 16%);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, hsla(0, 0%, 0%, 0.267));
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+  }
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: hsl(193, 65%, 16%);
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 10px hsl(194, 98%, 48%), 0 0 20px hsl(194, 98%, 48%),
+      0 0 40px hsl(194, 98%, 48%), 0 0 80px hsl(194, 98%, 48%),
+      0 0 160px hsl(194, 98%, 48%);
+  }
+}

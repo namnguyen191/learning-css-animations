@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
+import AppleNavbar from './shared/AppleNavbar/AppleNavbar';
 
 const BackgroundRevertTetric = lazy(
   () => import('./components/BackgroundRevertTetric/BackgroundRevertTetric')
@@ -13,14 +14,26 @@ const AnimatedIconBackground = lazy(
   () => import('./components/AnimatedIconBackground/AnimatedIconBackground')
 );
 const NeonLoading = lazy(() => import('./components/NeonLoading/NeonLoading'));
+const NeonText = lazy(() => import('./components/NeonText/NeonText'));
 
 const App = () => {
   return (
     <div>
+      <AppleNavbar>
+        <Link to="/" style={{ color: '#fff' }}>
+          Home
+        </Link>
+        <Link to="/" style={{ color: '#fff' }}>
+          <i style={{ fontSize: '27px' }} className="fab fa-github"></i>
+        </Link>
+      </AppleNavbar>
       <Suspense fallback={<p>Loading</p>}>
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/neon-text">
+            <NeonText />
           </Route>
           <Route exact path="/neon-loading">
             <NeonLoading />
