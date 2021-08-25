@@ -6,7 +6,7 @@ import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/learning-css-animations">
       <App />
     </Router>
   </React.StrictMode>,

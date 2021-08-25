@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-css-animation"]=this["webpackJsonpreact-css-animation"]||[]).push([[8],{37:function(n,e,t){n.exports={neonTextContainer:"NeonText_neonTextContainer__1Uq2G",animate:"NeonText_animate__32qZi"}},43:function(n,e,t){"use strict";t.r(e);var a=t(37),i=t.n(a),o=t(1);e.default=function(){return Object(o.jsx)("div",{className:i.a.neonTextContainer,children:Object(o.jsx)("h2",{contentEditable:"true",children:"Text"})})}}}]);
+//# sourceMappingURL=8.8a16d6bd.chunk.js.map
