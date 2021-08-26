@@ -3,6 +3,7 @@ import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
+import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
 import neonTextBg from './images/neon-text.gif';
 import revertTetricBg from './images/revert-tetric.gif';
@@ -51,6 +52,13 @@ const HomePage: React.FC = () => {
           title="Neon Text"
           text="Hello darkness my old friend"
           imageUrl={neonTextBg}
+        />
+      </Link>
+      <Link to="/neon-button">
+        <ParallaxCard
+          title="Neon Button"
+          text="Oooh So Shiny!"
+          imageUrl={neonButtonsBg}
         />
       </Link>
     </div>

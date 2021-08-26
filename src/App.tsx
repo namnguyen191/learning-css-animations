@@ -15,6 +15,7 @@ const AnimatedIconBackground = lazy(
 );
 const NeonLoading = lazy(() => import('./components/NeonLoading/NeonLoading'));
 const NeonText = lazy(() => import('./components/NeonText/NeonText'));
+const NeonButton = lazy(() => import('./components/NeonButton/NeonButton'));
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/neon-button">
+            <NeonButton />
           </Route>
           <Route exact path="/neon-text">
             <NeonText />
