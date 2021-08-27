@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
+import faceCursorTracerBg from './images/face-cursor-tracer.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
 import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
@@ -59,6 +60,13 @@ const HomePage: React.FC = () => {
           title="Neon Button"
           text="Oooh So Shiny!"
           imageUrl={neonButtonsBg}
+        />
+      </Link>
+      <Link to="/face-cursor-tracer">
+        <ParallaxCard
+          title="Eye Tracker"
+          text="No touchy my facy"
+          imageUrl={faceCursorTracerBg}
         />
       </Link>
     </div>
