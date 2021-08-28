@@ -19,6 +19,7 @@ const NeonButton = lazy(() => import('./components/NeonButton/NeonButton'));
 const FaceCursorTracer = lazy(
   () => import('./components/FaceCursorTracer/FaceCursorTracer')
 );
+const EndlessRoad = lazy(() => import('./components/EndlessRoad/EndlessRoad'));
 
 const App = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/endless-road">
+            <EndlessRoad />
           </Route>
           <Route exact path="/face-cursor-tracer">
             <FaceCursorTracer />

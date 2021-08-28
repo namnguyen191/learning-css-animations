@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
+import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
 import neonButtonsBg from './images/neon-buttons.gif';
@@ -67,6 +68,13 @@ const HomePage: React.FC = () => {
           title="Eye Tracker"
           text="No touchy my facy"
           imageUrl={faceCursorTracerBg}
+        />
+      </Link>
+      <Link to="/endless-road">
+        <ParallaxCard
+          title="Endless Road"
+          text="Life's like a road that you travel on"
+          imageUrl={endlessRoadBg}
         />
       </Link>
     </div>
