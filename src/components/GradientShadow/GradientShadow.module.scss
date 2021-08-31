@@ -1,0 +1,60 @@
+.gradientShadowContainer {
+  margin: 0;
+  padding: 0;
+  min-height: calc(100vh - var(--navbar-height));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .shadowContainer {
+    .shadow {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      background: linear-gradient(0deg, hsl(0, 0%, 0%), hsl(0, 0%, 15%));
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(
+          45deg,
+          hsl(325, 100%, 49%),
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000,
+          hsl(325, 100%, 49%),
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000
+        );
+        background-size: 400%;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        z-index: -1;
+        animation: animate 20s linear infinite;
+      }
+
+      &::after {
+        filter: blur(20px);
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

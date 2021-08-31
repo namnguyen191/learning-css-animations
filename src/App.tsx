@@ -20,6 +20,9 @@ const FaceCursorTracer = lazy(
   () => import('./components/FaceCursorTracer/FaceCursorTracer')
 );
 const EndlessRoad = lazy(() => import('./components/EndlessRoad/EndlessRoad'));
+const GradientShadow = lazy(
+  () => import('./components/GradientShadow/GradientShadow')
+);
 
 const App = () => {
   return (
@@ -36,6 +39,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/gradient-shadow">
+            <GradientShadow />
           </Route>
           <Route exact path="/endless-road">
             <EndlessRoad />

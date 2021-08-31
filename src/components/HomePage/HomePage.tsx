@@ -4,6 +4,7 @@ import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
 import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
+import gradientShadowBg from './images/gradient-shadow.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
 import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
@@ -75,6 +76,13 @@ const HomePage: React.FC = () => {
           title="Endless Road"
           text="Life's like a road that you travel on"
           imageUrl={endlessRoadBg}
+        />
+      </Link>
+      <Link to="/gradient-shadow">
+        <ParallaxCard
+          title="Gradient Shadow"
+          text="There's a rainbow on otherside of the dark side"
+          imageUrl={gradientShadowBg}
         />
       </Link>
     </div>
