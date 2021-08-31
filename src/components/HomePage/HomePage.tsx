@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
+import cssRainBg from './images/css-rain-bg.gif';
 import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
 import gradientShadowBg from './images/gradient-shadow.gif';
@@ -83,6 +84,13 @@ const HomePage: React.FC = () => {
           title="Gradient Shadow"
           text="There's a rainbow on otherside of the dark side"
           imageUrl={gradientShadowBg}
+        />
+      </Link>
+      <Link to="/css-storm">
+        <ParallaxCard
+          title="CSS Storm"
+          text="The rain calm the mind"
+          imageUrl={cssRainBg}
         />
       </Link>
     </div>

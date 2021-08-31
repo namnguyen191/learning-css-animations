@@ -23,6 +23,10 @@ const EndlessRoad = lazy(() => import('./components/EndlessRoad/EndlessRoad'));
 const GradientShadow = lazy(
   () => import('./components/GradientShadow/GradientShadow')
 );
+const AnimatedLeaves = lazy(
+  () => import('./components/AnimatedLeaves/AnimatedLeaves')
+);
+const CssStorm = lazy(() => import('./components/CssStorm/CssStorm'));
 
 const App = () => {
   return (
@@ -39,6 +43,12 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/css-storm">
+            <CssStorm />
+          </Route>
+          <Route exact path="/animated-leaves">
+            <AnimatedLeaves />
           </Route>
           <Route exact path="/gradient-shadow">
             <GradientShadow />
