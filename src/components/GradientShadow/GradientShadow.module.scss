@@ -6,8 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #000;
 
   .shadowContainer {
+    isolation: isolate;
+
     .shadow {
       position: relative;
       width: 400px;

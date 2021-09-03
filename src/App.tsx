@@ -27,6 +27,7 @@ const AnimatedLeaves = lazy(
   () => import('./components/AnimatedLeaves/AnimatedLeaves')
 );
 const CssStorm = lazy(() => import('./components/CssStorm/CssStorm'));
+const MoonNight = lazy(() => import('./components/MoonNight/MoonNight'));
 
 const App = () => {
   return (
@@ -43,6 +44,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/moon-night">
+            <MoonNight />
           </Route>
           <Route exact path="/css-storm">
             <CssStorm />

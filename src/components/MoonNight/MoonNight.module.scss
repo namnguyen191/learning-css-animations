@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.moonNightContainer {
+  margin: 0;
+  padding: 0;
+  background: hsl(195, 40%, 23%);
+  min-height: calc(100vh - var(--navbar-height));
+  font-family: 'Satisfy', cursive;
+  position: relative;
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+
+    h1 {
+      font-size: 7em;
+      color: #fff;
+      position: absolute;
+      top: 30px;
+      right: 300px;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%, -50%);
+      isolation: isolate;
+
+      .moon {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        border-radius: 50%;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -15px;
+          right: -15px;
+          background: hsl(195, 40%, 23%);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -325px;
+          height: 100%;
+          width: 400px;
+          background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0) 100%
+          );
+          transform-origin: right;
+          transform: rotate(-45deg);
+          z-index: -2;
+        }
+      }
+
+      .cloud {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50px;
+        top: -100px;
+        left: -300px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -110px;
+          left: -370px;
+          width: 560px;
+          height: 240px;
+          background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0) 100%
+          );
+          transform-origin: right;
+          transform: rotate(-45deg);
+          z-index: -2;
+        }
+
+        span {
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background: #fff;
+          border-radius: 50%;
+          display: block;
+
+          &:nth-child(1) {
+            top: -50px;
+            left: 30px;
+          }
+          &:nth-child(2) {
+            top: -30px;
+            left: 140px;
+          }
+          &:nth-child(3) {
+            top: -80px;
+            left: 80px;
+          }
+        }
+      }
+
+      .cloud2 {
+        top: 150px;
+        left: 200px;
+      }
+    }
+  }
+}

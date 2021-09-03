@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-css-animation"]=this["webpackJsonpreact-css-animation"]||[]).push([[5],{42:function(n,a,e){},53:function(n,a,e){"use strict";e.r(a);var t=e(42),s=e.n(t),i=e(0);a.default=function(){return Object(i.jsx)("div",{className:s.a.animatedLeavesContainer,children:Object(i.jsx)("h1",{children:"Animated Leaves Work!"})})}}}]);
-//# sourceMappingURL=5.e9b2477d.chunk.js.map

@@ -7,6 +7,7 @@ import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
 import gradientShadowBg from './images/gradient-shadow.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
+import moonNightBg from './images/moon-night.png';
 import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
 import neonTextBg from './images/neon-text.gif';
@@ -91,6 +92,13 @@ const HomePage: React.FC = () => {
           title="CSS Storm"
           text="The rain calm the mind"
           imageUrl={cssRainBg}
+        />
+      </Link>
+      <Link to="/moon-night">
+        <ParallaxCard
+          title="Moon Night"
+          text="One of those nights"
+          imageUrl={moonNightBg}
         />
       </Link>
     </div>
