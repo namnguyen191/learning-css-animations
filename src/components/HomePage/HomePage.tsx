@@ -7,6 +7,7 @@ import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
 import gradientShadowBg from './images/gradient-shadow.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
+import loadingTextBg from './images/loading-text-bg.gif';
 import moonNightBg from './images/moon-night.png';
 import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
@@ -99,6 +100,13 @@ const HomePage: React.FC = () => {
           title="Moon Night"
           text="One of those nights"
           imageUrl={moonNightBg}
+        />
+      </Link>
+      <Link to="/loading-text">
+        <ParallaxCard
+          title="Loading Text"
+          text="Waiting for stuffs to load is fun!"
+          imageUrl={loadingTextBg}
         />
       </Link>
     </div>
