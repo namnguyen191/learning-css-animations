@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ParallaxCard from '../../shared/ParallaxCard/ParallaxCard';
 import styles from './HomePage.module.scss';
 import animatedIconBg from './images/animated-icons-bg.gif';
+import blackYellowBg from './images/black-yellow-arrow-bg.gif';
 import cssRainBg from './images/css-rain-bg.gif';
 import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
@@ -107,6 +108,13 @@ const HomePage: React.FC = () => {
           title="Loading Text"
           text="Waiting for stuffs to load is fun!"
           imageUrl={loadingTextBg}
+        />
+      </Link>
+      <Link to="/yellow-black-arrow">
+        <ParallaxCard
+          title="Loading Indicator"
+          text="Hazardous Warning, this might take a while"
+          imageUrl={blackYellowBg}
         />
       </Link>
     </div>

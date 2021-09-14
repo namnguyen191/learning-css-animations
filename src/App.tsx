@@ -29,6 +29,12 @@ const AnimatedLeaves = lazy(
 const CssStorm = lazy(() => import('./components/CssStorm/CssStorm'));
 const MoonNight = lazy(() => import('./components/MoonNight/MoonNight'));
 const LoadingText = lazy(() => import('./components/LoadingText/LoadingText'));
+const YellowAndBlackArrowSignLoader = lazy(
+  () =>
+    import(
+      './components/YellowAndBlackArrowSignLoader/YellowAndBlackArrowSignLoader'
+    )
+);
 
 const App = () => {
   return (
@@ -45,6 +51,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/yellow-black-arrow">
+            <YellowAndBlackArrowSignLoader />
           </Route>
           <Route exact path="/loading-text">
             <LoadingText />
