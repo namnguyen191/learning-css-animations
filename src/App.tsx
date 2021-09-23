@@ -35,6 +35,9 @@ const YellowAndBlackArrowSignLoader = lazy(
       './components/YellowAndBlackArrowSignLoader/YellowAndBlackArrowSignLoader'
     )
 );
+const FlippingWindowLoader = lazy(
+  () => import('./components/FlippingWindowLoader/FlippingWindowLoader')
+);
 
 const App = () => {
   return (
@@ -51,6 +54,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/flipping-window">
+            <FlippingWindowLoader />
           </Route>
           <Route exact path="/yellow-black-arrow">
             <YellowAndBlackArrowSignLoader />

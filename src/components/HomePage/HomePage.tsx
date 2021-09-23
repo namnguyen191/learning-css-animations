@@ -6,6 +6,7 @@ import blackYellowBg from './images/black-yellow-arrow-bg.gif';
 import cssRainBg from './images/css-rain-bg.gif';
 import endlessRoadBg from './images/endless-road.gif';
 import faceCursorTracerBg from './images/face-cursor-tracer.gif';
+import flippingWindowBg from './images/flipping-window-bg.gif';
 import gradientShadowBg from './images/gradient-shadow.gif';
 import hotCupOfTeaBg from './images/hot-cup-of-tea.gif';
 import loadingTextBg from './images/loading-text-bg.gif';
@@ -115,6 +116,13 @@ const HomePage: React.FC = () => {
           title="Loading Indicator"
           text="Hazardous Warning, this might take a while"
           imageUrl={blackYellowBg}
+        />
+      </Link>
+      <Link to="/yellow-black-arrow">
+        <ParallaxCard
+          title="Flipping Windows"
+          text="When flipping tables is not enough"
+          imageUrl={flippingWindowBg}
         />
       </Link>
     </div>
