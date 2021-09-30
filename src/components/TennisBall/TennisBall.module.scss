@@ -1,0 +1,88 @@
+.TennisBallContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: calc(100vh - var(--navbar-height));
+  background: hsl(208, 100%, 32%);
+  position: relative;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .ball {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: hsl(78, 86%, 67%);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      animation: animate 1.5s linear infinite;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background: transparent;
+        border: 5px solid #fff;
+        right: -65%;
+        filter: blur(1px);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background: transparent;
+        border: 5px solid #fff;
+        left: -65%;
+        filter: blur(1px);
+      }
+    }
+
+    .shadow {
+      position: absolute;
+      width: 150px;
+      height: 50px;
+      transform: translate(-50%, 100%);
+      background: hsla(0, 0%, 0%, 0.2);
+      border-radius: 50%;
+      z-index: -1;
+      animation: shadow 1.5s linear infinite;
+      filter: blur(2px);
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) translateY(-200px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-0px) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-200px) rotate(360deg);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: translate(-50%, 100%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, 100%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, 100%) scale(0.5);
+  }
+}

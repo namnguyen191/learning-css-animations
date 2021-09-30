@@ -15,6 +15,7 @@ import neonButtonsBg from './images/neon-buttons.gif';
 import neonLoadingBg from './images/neon-loading.gif';
 import neonTextBg from './images/neon-text.gif';
 import revertTetricBg from './images/revert-tetric.gif';
+import tennisBallBg from './images/tennis-ball-bg.gif';
 import wavy3dBg from './images/wavy-three-d.gif';
 
 const HomePage: React.FC = () => {
@@ -123,6 +124,13 @@ const HomePage: React.FC = () => {
           title="Flipping Windows"
           text="When flipping tables is not enough"
           imageUrl={flippingWindowBg}
+        />
+      </Link>
+      <Link to="/tennis-ball">
+        <ParallaxCard
+          title="Tennis Ball"
+          text="Fetch boy fetch!"
+          imageUrl={tennisBallBg}
         />
       </Link>
     </div>
