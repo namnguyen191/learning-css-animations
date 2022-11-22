@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import AppleNavbar from './shared/AppleNavbar/AppleNavbar';
 
@@ -52,62 +52,35 @@ const App = () => {
         </Link>
       </AppleNavbar>
       <Suspense fallback={<p>Loading</p>}>
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/tennis-ball">
-            <TennisBall />
-          </Route>
-          <Route exact path="/flipping-window">
-            <FlippingWindowLoader />
-          </Route>
-          <Route exact path="/yellow-black-arrow">
-            <YellowAndBlackArrowSignLoader />
-          </Route>
-          <Route exact path="/loading-text">
-            <LoadingText />
-          </Route>
-          <Route exact path="/moon-night">
-            <MoonNight />
-          </Route>
-          <Route exact path="/css-storm">
-            <CssStorm />
-          </Route>
-          <Route exact path="/animated-leaves">
-            <AnimatedLeaves />
-          </Route>
-          <Route exact path="/gradient-shadow">
-            <GradientShadow />
-          </Route>
-          <Route exact path="/endless-road">
-            <EndlessRoad />
-          </Route>
-          <Route exact path="/face-cursor-tracer">
-            <FaceCursorTracer />
-          </Route>
-          <Route exact path="/neon-button">
-            <NeonButton />
-          </Route>
-          <Route exact path="/neon-text">
-            <NeonText />
-          </Route>
-          <Route exact path="/neon-loading">
-            <NeonLoading />
-          </Route>
-          <Route path="/animated-icon-background">
-            <AnimatedIconBackground />
-          </Route>
-          <Route path="/background-revert-tetric">
-            <BackgroundRevertTetric />
-          </Route>
-          <Route path="/three-d-wavy-circle">
-            <ThreeDWavyCircle />
-          </Route>
-          <Route path="/hot-cup-of-tea">
-            <HotCupOfTea />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/tennis-ball" element={<TennisBall />} />
+          <Route path="/flipping-window" element={<FlippingWindowLoader />} />
+          <Route
+            path="/yellow-black-arrow"
+            element={<YellowAndBlackArrowSignLoader />}
+          />
+          <Route path="/loading-text" element={<LoadingText />} />
+          <Route path="/moon-night" element={<MoonNight />} />
+          <Route path="/css-storm" element={<CssStorm />} />
+          <Route path="/animated-leaves" element={<AnimatedLeaves />} />
+          <Route path="/gradient-shadow" element={<GradientShadow />} />
+          <Route path="/endless-road" element={<EndlessRoad />} />
+          <Route path="/face-cursor-tracer" element={<FaceCursorTracer />} />
+          <Route path="/neon-button" element={<NeonButton />} />
+          <Route path="/neon-text" element={<NeonText />} />
+          <Route path="/neon-loading" element={<NeonLoading />} />
+          <Route
+            path="/animated-icon-background"
+            element={<AnimatedIconBackground />}
+          />
+          <Route
+            path="/background-revert-tetric"
+            element={<BackgroundRevertTetric />}
+          />
+          <Route path="/three-d-wavy-circle" element={<ThreeDWavyCircle />} />
+          <Route path="/hot-cup-of-tea" element={<HotCupOfTea />} />
+        </Routes>
       </Suspense>
     </div>
   );

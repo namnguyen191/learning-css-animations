@@ -119,7 +119,7 @@ const HomePage: React.FC = () => {
           imageUrl={blackYellowBg}
         />
       </Link>
-      <Link to="/yellow-black-arrow">
+      <Link to="/flipping-window">
         <ParallaxCard
           title="Flipping Windows"
           text="When flipping tables is not enough"

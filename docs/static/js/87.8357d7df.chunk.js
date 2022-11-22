@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_css_animation=self.webpackChunkreact_css_animation||[]).push([[87],{87:function(e,n,a){a.r(n),a.d(n,{default:function(){return i}});var s={},t=a(166),i=function(){return(0,t.jsx)("div",{className:s.animatedLeavesContainer,children:(0,t.jsx)("h1",{children:"Animated Leaves Work!"})})}}}]);
+//# sourceMappingURL=87.8357d7df.chunk.js.map

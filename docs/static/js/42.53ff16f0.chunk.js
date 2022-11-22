@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_css_animation=self.webpackChunkreact_css_animation||[]).push([[42],{42:function(n,e,t){t.r(e),t.d(e,{default:function(){return i}});var a="NeonText_neonTextContainer__lhJZf",c=t(166),i=function(){return(0,c.jsx)("div",{className:a,children:(0,c.jsx)("h2",{contentEditable:"true",children:"Text"})})}}}]);
+//# sourceMappingURL=42.53ff16f0.chunk.js.map
